@@ -1,18 +1,14 @@
 <template>
-  <div class="min-h-screen flex items-center justify-center">
-    <currency-converter />
+  <div>
+    <h1 class="text-2xl font-bold text-center">Conversor de Moedas</h1>
+    <p class="text-center">Bem-vindo ao conversor de moedas!</p>
   </div>
 </template>
 
-
 <script lang="ts">
 import { defineComponent } from "vue";
-import CurrencyConverter from "./components/CurrencyConverter.vue";
 
 export default defineComponent({
-  components: {
-    CurrencyConverter,
-  },
+  name: "App",
 });
 </script>
-
