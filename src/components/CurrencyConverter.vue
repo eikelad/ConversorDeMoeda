@@ -20,7 +20,7 @@
           v-model="fromCurrency"
           class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
         >
-          <option v-for="(rate, currency) in rates" :key="currency" :value="currency">
+          <option v-for="(_, currency) in rates" :key="currency" :value="currency">
             {{ currency }}
           </option>
         </select>
@@ -32,7 +32,7 @@
           v-model="toCurrency"
           class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
         >
-          <option v-for="(rate, currency) in rates" :key="currency" :value="currency">
+          <option v-for="(_, currency) in rates" :key="currency" :value="currency">
             {{ currency }}
           </option>
         </select>
